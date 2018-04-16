@@ -42,5 +42,9 @@ namespace ParcelCalculator.Models
     {
       return _width * _height * _length;
     }
+    public int GetCost()
+    {
+      return GetVolume() / _weight * 2;
+    }
   }
 }
